@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    margin:0;
+}
+#nav {
+    float: left;
+    width: 150px;
+    height: 100%;
+    background-color: deeppink;
+}
+#pads {
+    float: left;
+    width: 400px;;
+    font-size: 0;
+}
+.pad {
+    background: #14C7DB;
+    width: 100px;
+    height:100px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    position: relative;
+    display:inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active{
+     background-color: yellow;   
+}
+
+.edited{
+     background-color: #00FF9F;    
+}
+
+
+.edit-control{
+     display:none;   
+}

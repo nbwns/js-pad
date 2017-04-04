@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS PAD</title>
+    </head>
+       <link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+        <div>
+            <div id="nav">
+                 <h1>JS PAD</h1>
+                <button id="edit">Edit</button>
+                <button disabled>Record</button>
+                <div class="edit-control">
+                    <h2>Volume</h2>
+                <input id="volume" class="knob" data-width="75" data-angleOffset=-125 data-angleArc=250 data-fgColor="#66EE66" value="100"/>
+                </div>
+                <div class="edit-control">
+                    <h2>File</h2>
+                    <input type="file" id="file"/>
+                </div>
+                <div class="edit-control">
+                    <h2>Key</h2>
+                    <div id="key-chooser">
+                    </div>
+                </div>
+            </div>
+            <div id="pads">
+                <div class="pad" id="pad1"></div>
+                <div class="pad" id="pad2"></div>
+                <div class="pad" id="pad3"></div>
+                <div class="pad" id="pad4"></div>
+                <div class="pad" id="pad5"></div>
+                <div class="pad" id="pad6"></div>
+            </div>
+        </div>
+        <ol>
+            <li>Click Edit</li>
+            <li>Select a pad</li>
+            <li>Upload a file (.mp3)</li>
+            <li>Exit edit mode</li>
+            <li>Click, tap or use the keyboard</li>
+        </ol>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
